@@ -1,0 +1,24 @@
+.bar{
+    .flex-column();
+    .flex-justify-center();
+    .flex-align-center();
+    .flex-item-no-resize();
+    
+    position: relative;
+    min-height: @mars-bar-min-height;
+    
+    & > div{
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        
+        &.left{
+            left: 0px;
+        }
+        
+        &.right{
+            right: 0px;
+        }
+    }
+}
+    
