@@ -1,0 +1,36 @@
+{
+  "name": "Mars",
+  "version": "0.0.1",
+  "description": "Mars is a JS/CSS library for building mobile apps that ships with ReactJS components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KodersLab/Mars.git"
+  },
+  "keywords": [
+    "mobile",
+    "app",
+    "react",
+    "css",
+    "less"
+  ],
+  "author": "KodersLab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KodersLab/Mars/issues"
+  },
+  "homepage": "https://github.com/KodersLab/Mars",
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.9",
+    "babel": "^5.1.10",
+    "browserify": "^9.0.8",
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.2",
+    "gulp-postcss": "^5.1.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "react": "^0.13.1"
+  }
+}
