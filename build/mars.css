@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -355,6 +356,8 @@ th {
 }
 .app {
   position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 }
 .app.app-body {
   width: 100vw;
