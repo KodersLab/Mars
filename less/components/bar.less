@@ -1,13 +1,18 @@
 .bar{
-    .flex-column();
+    .flex-row();
     .flex-justify-center();
-    .flex-align-center();
+    .flex-align-items-center();
     .flex-item-no-resize();
     
     position: relative;
     min-height: @mars-bar-min-height;
     
     & > div{
+        .flex-row();
+        .flex-justify-center();
+        .flex-align-items-center();
+        .flex-item-no-resize();
+        
         position: absolute;
         top: 0px;
         bottom: 0px;
@@ -20,5 +25,29 @@
             right: 0px;
         }
     }
-}
     
+    .bar-variant(@mars-bar-default-bg-color, @mars-bar-default-text-color);
+    &.bar-primary{
+        .bar-variant(@mars-bar-primary-bg-color, @mars-bar-primary-text-color);
+    }
+    &.bar-secondary{
+        .bar-variant(@mars-bar-secondary-bg-color, @mars-bar-secondary-text-color);
+    }
+    &.bar-success{
+        .bar-variant(@mars-bar-success-bg-color, @mars-bar-success-text-color);
+    }
+    &.bar-danger{
+        .bar-variant(@mars-bar-danger-bg-color, @mars-bar-danger-text-color);
+    }
+    &.bar-warning{
+        .bar-variant(@mars-bar-warning-bg-color, @mars-bar-warning-text-color);
+    }
+    &.bar-info{
+        .bar-variant(@mars-bar-info-bg-color, @mars-bar-info-text-color);
+    }
+}
+
+.bar-variant(@bg-color, @text-color){
+    background: @bg-color;
+    color: @text-color;
+}

@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-gulp.task('default', function () {
+gulp.task('styles', function () {
     var postcss      = require('gulp-postcss');
     var sourcemaps   = require('gulp-sourcemaps');
     var autoprefixer = require('autoprefixer-core');
@@ -16,3 +16,9 @@ gulp.task('default', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./build'));
 });
+
+gulp.task('watch', function() {
+    gulp.watch('./less/**/*.less', ['styles']);
+});
+
+gulp.task('default', ['styles']);
