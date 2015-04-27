@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -357,11 +357,75 @@ th {
 .app {
   position: relative;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
 }
 .app.app-body {
   width: 100vw;
   height: 100vh;
+}
+.app p,
+.app h1,
+.app h2,
+.app h3,
+.app h4,
+.app h5,
+.app h6 {
+  word-wrap: break-word;
+  display: block;
+}
+.app h1,
+.app h2,
+.app h3,
+.app h4 {
+  margin: 0px;
+  padding: 0px;
+}
+.app .display-4 {
+  font-size: 112px;
+  font-weight: 300;
+  line-height: 120px;
+}
+.app .display-3 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+}
+.app .display-2 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.app h1 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.app h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.app h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.app h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.app .subhead-2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.app caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 }
 .page {
   display: -webkit-flex;
@@ -419,7 +483,8 @@ th {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   position: relative;
-  min-height: 48px;
+  min-height: 38px;
+  padding: 5px;
   background: #f3f3f3;
   color: #222222;
 }
@@ -443,14 +508,14 @@ th {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   position: absolute;
-  top: 0px;
-  bottom: 0px;
+  top: 5px;
+  bottom: 5px;
 }
 .bar > div.left {
-  left: 0px;
+  left: 5px;
 }
 .bar > div.right {
-  right: 0px;
+  right: 5px;
 }
 .bar.bar-primary {
   background: #2980b9;

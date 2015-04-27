@@ -5,7 +5,8 @@
     .flex-item-no-resize();
     
     position: relative;
-    min-height: @mars-bar-min-height;
+    min-height: (@mars-bar-min-height - (2 * @mars-bar-padding));
+    padding: @mars-bar-padding;
     
     & > div{
         .flex-row();
@@ -14,15 +15,15 @@
         .flex-item-no-resize();
         
         position: absolute;
-        top: 0px;
-        bottom: 0px;
+        top: @mars-bar-padding;
+        bottom: @mars-bar-padding;
         
         &.left{
-            left: 0px;
+            left: @mars-bar-padding;
         }
         
         &.right{
-            right: 0px;
+            right: @mars-bar-padding;
         }
     }
     
