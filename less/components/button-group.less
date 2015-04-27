@@ -1,0 +1,13 @@
+.button-group{
+    .flex-row();
+    .flex-item-no-resize();
+    
+    &.button-group-spaced{
+        margin: @mars-button-group-margin-vertical @mars-button-group-margin-horizontal;
+    }
+    
+    & > .button{
+        .flex-item-grow-only();
+        margin: 0px 0px;
+    }
+}

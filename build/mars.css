@@ -731,5 +731,31 @@ th {
   background: rgba(38, 119, 172, 0.05);
   color: #2472a4;
 }
+.button-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.button-group.button-group-spaced {
+  margin: 4px 4px;
+}
+.button-group > .button {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin: 0px 0px;
+}
 
 /*# sourceMappingURL=mars.css.map */
