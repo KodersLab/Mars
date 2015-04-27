@@ -1,4 +1,111 @@
-.button{
-    font-size: 14px;
-    font-weight: 500;
+.button-variant(@bg-color, @text-color, @bg-color-hover, @text-color-hover, @bg-color-active, @text-color-active, @bg-color-disabled, @text-color-disabled){
+    background: @bg-color;
+    color: @text-color;
+    
+    &:hover{
+        background: @bg-color-hover;
+        color: @text-color-hover;
+    }
+    
+    &:active{
+        background: @bg-color-active;
+        color: @text-color-active;
+    }
+    
+    &.button-flat{
+        background: none;
+        color: @bg-color;
+        
+        &:hover{
+            background: fade(@bg-color-hover, 3%);
+            color: @bg-color-hover;
+        }
+        
+        &:active{
+            background: fade(@bg-color-hover, 5%);
+            color: @bg-color-active;
+        }
+    }
 }
+
+.button{
+    .flex-row();
+    .flex-item-no-resize();
+    
+    font-size: @mars-button-font-size;
+    font-weight: @mars-button-font-weight;
+    padding: @mars-button-padding-vertical @mars-button-padding-horizontal;
+    
+    min-height: (@mars-button-min-height - (2 * @mars-button-padding-vertical));
+    line-height: (@mars-button-min-height - (2 * @mars-button-padding-vertical));
+    
+    text-decoration: @mars-button-text-decoration;
+    text-transform: @mars-button-text-transform;
+    
+    &.button-spaced{
+        margin: @mars-button-margin-vertical @mars-button-margin-horizontal;
+    }
+    
+    // Variants    
+    .button-variant(
+        @mars-button-default-bg-color, @mars-button-default-text-color,
+        @mars-button-default-hover-bg-color, @mars-button-default-hover-text-color,
+        @mars-button-default-active-bg-color, @mars-button-default-active-text-color,
+        @mars-button-default-disabled-bg-color, @mars-button-default-disabled-text-color
+    );
+    
+    &.button-primary{
+        .button-variant(
+            @mars-button-primary-bg-color, @mars-button-primary-text-color,
+            @mars-button-primary-hover-bg-color, @mars-button-primary-hover-text-color,
+            @mars-button-primary-active-bg-color, @mars-button-primary-active-text-color,
+            @mars-button-primary-disabled-bg-color, @mars-button-primary-disabled-text-color
+        );
+    }
+    
+    &.button-secondary{
+        .button-variant(
+            @mars-button-secondary-bg-color, @mars-button-secondary-text-color,
+            @mars-button-secondary-hover-bg-color, @mars-button-secondary-hover-text-color,
+            @mars-button-secondary-active-bg-color, @mars-button-secondary-active-text-color,
+            @mars-button-secondary-disabled-bg-color, @mars-button-secondary-disabled-text-color
+        );
+    }
+    
+    &.button-success{
+        .button-variant(
+            @mars-button-success-bg-color, @mars-button-success-text-color,
+            @mars-button-success-hover-bg-color, @mars-button-success-hover-text-color,
+            @mars-button-success-active-bg-color, @mars-button-success-active-text-color,
+            @mars-button-success-disabled-bg-color, @mars-button-success-disabled-text-color
+        );
+    }
+    
+    &.button-danger{
+        .button-variant(
+            @mars-button-danger-bg-color, @mars-button-danger-text-color,
+            @mars-button-danger-hover-bg-color, @mars-button-danger-hover-text-color,
+            @mars-button-danger-active-bg-color, @mars-button-danger-active-text-color,
+            @mars-button-danger-disabled-bg-color, @mars-button-danger-disabled-text-color
+        );
+    }
+    
+    &.button-warning{
+        .button-variant(
+            @mars-button-warning-bg-color, @mars-button-warning-text-color,
+            @mars-button-warning-hover-bg-color, @mars-button-warning-hover-text-color,
+            @mars-button-warning-active-bg-color, @mars-button-warning-active-text-color,
+            @mars-button-warning-disabled-bg-color, @mars-button-warning-disabled-text-color
+        );
+    }
+    
+    &.button-info{
+        .button-variant(
+            @mars-button-info-bg-color, @mars-button-info-text-color,
+            @mars-button-info-hover-bg-color, @mars-button-info-hover-text-color,
+            @mars-button-info-active-bg-color, @mars-button-info-active-text-color,
+            @mars-button-info-disabled-bg-color, @mars-button-info-disabled-text-color
+        );
+    }
+}
+

@@ -7,8 +7,8 @@
 @mars-warning:                      #f39c12;
 @mars-info:                         #2980b9;
 
-@mars-primary-contrast:             #ffffff;
 @mars-default-contrast:             #222222;
+@mars-primary-contrast:             #ffffff;
 @mars-secondary-contrast:           #ffffff;
 @mars-success-contrast:             #ffffff;
 @mars-danger-contrast:              #ffffff;
@@ -22,13 +22,13 @@
 @mars-line-height-base:             20px;
 @mars-font-color:                   #222222;
 
-@mars-font-bold:                    300;
+@mars-font-demi:                    300;
 @mars-font-regular:                 400;
 @mars-font-medium:                  500;
 
 @mars-display-4-font-size:          112px;
 @mars-display-4-line-height:        120px;
-@mars-display-4-font-weight:        @mars-font-bold;
+@mars-display-4-font-weight:        @mars-font-demi;
 
 @mars-display-3-font-size:          56px;
 @mars-display-3-line-height:        64px;
@@ -86,3 +86,77 @@
 
 @mars-bar-info-bg-color:            @mars-info;
 @mars-bar-info-text-color:          @mars-info-contrast;
+
+// Button
+@mars-button-font-size:             14px;
+@mars-button-font-weight:           @mars-font-medium;
+@mars-button-margin-vertical:       4px;
+@mars-button-margin-horizontal:     4px;
+@mars-button-padding-vertical:      0px;
+@mars-button-padding-horizontal:    8px;
+@mars-button-min-height:            36px;
+@mars-button-text-decoration:       none;
+@mars-button-text-transform:        uppercase;
+
+@mars-button-default-bg-color:                  @mars-default;
+@mars-button-default-text-color:                @mars-default-contrast;
+@mars-button-default-hover-bg-color:            darken(@mars-default, 3%);
+@mars-button-default-hover-text-color:          @mars-default-contrast;
+@mars-button-default-active-bg-color:           darken(@mars-default, 5%);
+@mars-button-default-active-text-color:         @mars-default-contrast;
+@mars-button-default-disabled-bg-color:         lighten(@mars-default, 30%);
+@mars-button-default-disabled-text-color:       @mars-default-contrast;
+
+@mars-button-primary-bg-color:                  @mars-primary;
+@mars-button-primary-text-color:                @mars-primary-contrast;
+@mars-button-primary-hover-bg-color:            darken(@mars-primary, 3%);
+@mars-button-primary-hover-text-color:          @mars-primary-contrast;
+@mars-button-primary-active-bg-color:           darken(@mars-primary, 5%);
+@mars-button-primary-active-text-color:         @mars-primary-contrast;
+@mars-button-primary-disabled-bg-color:         lighten(@mars-primary, 30%);
+@mars-button-primary-disabled-text-color:       @mars-primary-contrast;
+
+@mars-button-secondary-bg-color:                @mars-secondary;
+@mars-button-secondary-text-color:              @mars-secondary-contrast;
+@mars-button-secondary-hover-bg-color:          darken(@mars-secondary, 3%);
+@mars-button-secondary-hover-text-color:        @mars-secondary-contrast;
+@mars-button-secondary-active-bg-color:         darken(@mars-secondary, 5%);
+@mars-button-secondary-active-text-color:       @mars-secondary-contrast;
+@mars-button-secondary-disabled-bg-color:       lighten(@mars-secondary, 30%);
+@mars-button-secondary-disabled-text-color:     @mars-secondary-contrast;
+
+@mars-button-success-bg-color:                  @mars-success;
+@mars-button-success-text-color:                @mars-success-contrast;
+@mars-button-success-hover-bg-color:            darken(@mars-success, 3%);
+@mars-button-success-hover-text-color:          @mars-success-contrast;
+@mars-button-success-active-bg-color:           darken(@mars-success, 5%);
+@mars-button-success-active-text-color:         @mars-success-contrast;
+@mars-button-success-disabled-bg-color:         lighten(@mars-success, 30%);
+@mars-button-success-disabled-text-color:       @mars-success-contrast;
+
+@mars-button-danger-bg-color:                   @mars-danger;
+@mars-button-danger-text-color:                 @mars-danger-contrast;
+@mars-button-danger-hover-bg-color:             darken(@mars-danger, 3%);
+@mars-button-danger-hover-text-color:           @mars-danger-contrast;
+@mars-button-danger-active-bg-color:            darken(@mars-danger, 5%);
+@mars-button-danger-active-text-color:          @mars-danger-contrast;
+@mars-button-danger-disabled-bg-color:          lighten(@mars-danger, 30%);
+@mars-button-danger-disabled-text-color:        @mars-danger-contrast;
+
+@mars-button-warning-bg-color:                  @mars-warning;
+@mars-button-warning-text-color:                @mars-warning-contrast;
+@mars-button-warning-hover-bg-color:            darken(@mars-warning, 3%);
+@mars-button-warning-hover-text-color:          @mars-warning-contrast;
+@mars-button-warning-active-bg-color:           darken(@mars-warning, 5%);
+@mars-button-warning-active-text-color:         @mars-warning-contrast;
+@mars-button-warning-disabled-bg-color:         lighten(@mars-warning, 30%);
+@mars-button-warning-disabled-text-color:       @mars-warning-contrast;
+
+@mars-button-info-bg-color:                     @mars-info;
+@mars-button-info-text-color:                   @mars-info-contrast;
+@mars-button-info-hover-bg-color:               darken(@mars-info, 3%);
+@mars-button-info-hover-text-color:             @mars-info-contrast;
+@mars-button-info-active-bg-color:              darken(@mars-info, 5%);
+@mars-button-info-active-text-color:            @mars-info-contrast;
+@mars-button-info-disabled-bg-color:            lighten(@mars-info, 30%);
+@mars-button-info-disabled-text-color:          @mars-info-contrast;

@@ -541,5 +541,195 @@ th {
   background: #2980b9;
   color: #ffffff;
 }
+.button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 8px;
+  min-height: 36px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #f3f3f3;
+  color: #222222;
+}
+.button.button-spaced {
+  margin: 4px 4px;
+}
+.button:hover {
+  background: #ebebeb;
+  color: #222222;
+}
+.button:active {
+  background: #e6e6e6;
+  color: #222222;
+}
+.button.button-flat {
+  background: none;
+  color: #f3f3f3;
+}
+.button.button-flat:hover {
+  background: rgba(235, 235, 235, 0.03);
+  color: #ebebeb;
+}
+.button.button-flat:active {
+  background: rgba(235, 235, 235, 0.05);
+  color: #e6e6e6;
+}
+.button.button-primary {
+  background: #2980b9;
+  color: #ffffff;
+}
+.button.button-primary:hover {
+  background: #2677ac;
+  color: #ffffff;
+}
+.button.button-primary:active {
+  background: #2472a4;
+  color: #ffffff;
+}
+.button.button-primary.button-flat {
+  background: none;
+  color: #2980b9;
+}
+.button.button-primary.button-flat:hover {
+  background: rgba(38, 119, 172, 0.03);
+  color: #2677ac;
+}
+.button.button-primary.button-flat:active {
+  background: rgba(38, 119, 172, 0.05);
+  color: #2472a4;
+}
+.button.button-secondary {
+  background: #2c3e50;
+  color: #ffffff;
+}
+.button.button-secondary:hover {
+  background: #273646;
+  color: #ffffff;
+}
+.button.button-secondary:active {
+  background: #233140;
+  color: #ffffff;
+}
+.button.button-secondary.button-flat {
+  background: none;
+  color: #2c3e50;
+}
+.button.button-secondary.button-flat:hover {
+  background: rgba(39, 54, 70, 0.03);
+  color: #273646;
+}
+.button.button-secondary.button-flat:active {
+  background: rgba(39, 54, 70, 0.05);
+  color: #233140;
+}
+.button.button-success {
+  background: #27ae60;
+  color: #ffffff;
+}
+.button.button-success:hover {
+  background: #24a259;
+  color: #ffffff;
+}
+.button.button-success:active {
+  background: #229955;
+  color: #ffffff;
+}
+.button.button-success.button-flat {
+  background: none;
+  color: #27ae60;
+}
+.button.button-success.button-flat:hover {
+  background: rgba(36, 162, 89, 0.03);
+  color: #24a259;
+}
+.button.button-success.button-flat:active {
+  background: rgba(36, 162, 89, 0.05);
+  color: #229955;
+}
+.button.button-danger {
+  background: #e74c3c;
+  color: #ffffff;
+}
+.button.button-danger:hover {
+  background: #e53f2e;
+  color: #ffffff;
+}
+.button.button-danger:active {
+  background: #e43725;
+  color: #ffffff;
+}
+.button.button-danger.button-flat {
+  background: none;
+  color: #e74c3c;
+}
+.button.button-danger.button-flat:hover {
+  background: rgba(229, 63, 46, 0.03);
+  color: #e53f2e;
+}
+.button.button-danger.button-flat:active {
+  background: rgba(229, 63, 46, 0.05);
+  color: #e43725;
+}
+.button.button-warning {
+  background: #f39c12;
+  color: #ffffff;
+}
+.button.button-warning:hover {
+  background: #ea940c;
+  color: #ffffff;
+}
+.button.button-warning:active {
+  background: #e08e0b;
+  color: #ffffff;
+}
+.button.button-warning.button-flat {
+  background: none;
+  color: #f39c12;
+}
+.button.button-warning.button-flat:hover {
+  background: rgba(234, 148, 12, 0.03);
+  color: #ea940c;
+}
+.button.button-warning.button-flat:active {
+  background: rgba(234, 148, 12, 0.05);
+  color: #e08e0b;
+}
+.button.button-info {
+  background: #2980b9;
+  color: #ffffff;
+}
+.button.button-info:hover {
+  background: #2677ac;
+  color: #ffffff;
+}
+.button.button-info:active {
+  background: #2472a4;
+  color: #ffffff;
+}
+.button.button-info.button-flat {
+  background: none;
+  color: #2980b9;
+}
+.button.button-info.button-flat:hover {
+  background: rgba(38, 119, 172, 0.03);
+  color: #2677ac;
+}
+.button.button-info.button-flat:active {
+  background: rgba(38, 119, 172, 0.05);
+  color: #2472a4;
+}
 
 /*# sourceMappingURL=mars.css.map */
