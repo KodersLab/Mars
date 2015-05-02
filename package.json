@@ -1,14 +1,14 @@
 {
-  "name": "Mars",
+  "name": "Whisky",
   "version": "0.0.1",
-  "description": "Mars is a JS/CSS library for building mobile apps that ships with ReactJS components",
+  "description": "Whisky is a JS/CSS library for building mobile apps that ships with ReactJS components",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KodersLab/Mars.git"
+    "url": "https://github.com/KodersLab/Whisky.git"
   },
   "keywords": [
     "mobile",
@@ -20,9 +20,9 @@
   "author": "KodersLab",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KodersLab/Mars/issues"
+    "url": "https://github.com/KodersLab/Whisky/issues"
   },
-  "homepage": "https://github.com/KodersLab/Mars",
+  "homepage": "https://github.com/KodersLab/Whisky",
   "devDependencies": {
     "autoprefixer-core": "^5.1.9",
     "babel": "^5.1.10",

@@ -5,8 +5,8 @@
     .flex-item-no-resize();
     
     position: relative;
-    min-height: (@mars-bar-min-height - (2 * @mars-bar-padding));
-    padding: @mars-bar-padding;
+    min-height: (@whisky-bar-min-height - (2 * @whisky-bar-padding));
+    padding: @whisky-bar-padding;
     
     & > div{
         .flex-row();
@@ -15,36 +15,36 @@
         .flex-item-no-resize();
         
         position: absolute;
-        top: @mars-bar-padding;
-        bottom: @mars-bar-padding;
+        top: @whisky-bar-padding;
+        bottom: @whisky-bar-padding;
         
         &.left{
-            left: @mars-bar-padding;
+            left: @whisky-bar-padding;
         }
         
         &.right{
-            right: @mars-bar-padding;
+            right: @whisky-bar-padding;
         }
     }
     
-    .bar-variant(@mars-bar-default-bg-color, @mars-bar-default-text-color);
+    .bar-variant(@whisky-bar-default-bg-color, @whisky-bar-default-text-color);
     &.bar-primary{
-        .bar-variant(@mars-bar-primary-bg-color, @mars-bar-primary-text-color);
+        .bar-variant(@whisky-bar-primary-bg-color, @whisky-bar-primary-text-color);
     }
     &.bar-secondary{
-        .bar-variant(@mars-bar-secondary-bg-color, @mars-bar-secondary-text-color);
+        .bar-variant(@whisky-bar-secondary-bg-color, @whisky-bar-secondary-text-color);
     }
     &.bar-success{
-        .bar-variant(@mars-bar-success-bg-color, @mars-bar-success-text-color);
+        .bar-variant(@whisky-bar-success-bg-color, @whisky-bar-success-text-color);
     }
     &.bar-danger{
-        .bar-variant(@mars-bar-danger-bg-color, @mars-bar-danger-text-color);
+        .bar-variant(@whisky-bar-danger-bg-color, @whisky-bar-danger-text-color);
     }
     &.bar-warning{
-        .bar-variant(@mars-bar-warning-bg-color, @mars-bar-warning-text-color);
+        .bar-variant(@whisky-bar-warning-bg-color, @whisky-bar-warning-text-color);
     }
     &.bar-info{
-        .bar-variant(@mars-bar-info-bg-color, @mars-bar-info-text-color);
+        .bar-variant(@whisky-bar-info-bg-color, @whisky-bar-info-text-color);
     }
 }
 

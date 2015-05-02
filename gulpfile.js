@@ -7,7 +7,7 @@ gulp.task('styles', function () {
     var less = require('gulp-less');
     var path = require('path');
 
-    return gulp.src('./less/mars.less')
+    return gulp.src('./less/whisky.less')
         .pipe(less({
           paths: [ path.join(__dirname, 'less') ]
         }))
